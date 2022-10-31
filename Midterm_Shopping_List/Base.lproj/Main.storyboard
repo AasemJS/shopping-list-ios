@@ -65,6 +65,9 @@
                                         <color key="tintColor" red="0.20784312490000001" green="0.20784312490000001" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SAVE"/>
+                                        <connections>
+                                            <action selector="saveFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffy-1Y-wIC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-CA-Ln9">
                                         <rect key="frame" x="211" y="435" width="129" height="35"/>

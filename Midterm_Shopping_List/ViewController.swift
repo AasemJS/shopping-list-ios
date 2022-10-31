@@ -3,6 +3,12 @@
 //  Midterm_Shopping_List
 //
 //  Created by Asem Javed Syed on 2022-10-30.
+//  Student ID - 301274803
+//  V1.0 created - October 30, 2022
+//  Changes - First build - Initial project created
+//
+//  Shopping List App - Midterm Practical Exam
+//
 //
 
 import UIKit
@@ -11,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         //stepper functionality
         stepper1.autorepeat = true
@@ -102,6 +107,8 @@ class ViewController: UIViewController {
         stepperLbl5.text = Int(stepper5.value).description
     }
     
+    //reset button
+    
     @IBAction func cancelReset(_ sender: UIButton) {
         listName.text = "Shopping List"
         
@@ -115,6 +122,16 @@ class ViewController: UIViewController {
         self.stepperLbl4.text = "0"
         stepper5.value = 0
         self.stepperLbl5.text = "0"
-        
     }
+    
+    // save functionality
+    @IBAction func saveFunc(_ sender: Any) {
+        print("List name " + "- " + listName.text!)
+        print(stepperLbl1.text!)
+        print(stepperLbl2.text!)
+        print(stepperLbl3.text!)
+        print(stepperLbl4.text!)
+        print(stepperLbl5.text!)
+    }
+    
 }
